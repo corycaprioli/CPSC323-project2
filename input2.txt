@@ -1,1 +1,6 @@
-
+function calculator (5) {
+  if ( height > size ) {
+    height = size
+  }
+  return;
+}

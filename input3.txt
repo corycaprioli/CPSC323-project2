@@ -1,1 +1,20 @@
+#
+  int num1, num2, num3;
+#
 
+num1 = 5;
+num2 = 36;
+
+function add (num1, num2) {
+  num3 = num1 + num2
+  
+  return num3;
+}
+
+while (num3 > num1) {
+  num3 = num3 - 1;
+}
+
+if (num3 < 10) {
+  put (num2)
+}

@@ -1,1 +1,55 @@
+#
+  int num1, num2, num3;
+#
+
+num1 = 5;
+num2 = 36;
+
+function add (num1, num2) {
+  num3 = num1 + num2
+  
+  return num3;
+}
+
+while (num3 > num1) {
+  num3 = num3 - 1;
+}
+
+if (num3 < 10) {
+  put (num2)
+}
+
+Token: separator           Lexeme: #                   
+	<RAT23S> -> <Opt Function Definitions> # <Opt Declaration List> # <Statement List>
+	<Opt Function Definition> -> Epsilon
+Token: keyword             Lexeme: int                 
+	<Opt Declaration List> -> <Declaration List>
+	<Declaration List> -> <Declaration> ; <Declaration List Prime>
+	<Declaration> -> <Qualifier> <IDs>
+	<Qualifier> -> int
+Token: identifier          Lexeme: num1                
+	<IDs> -> <identifier> <IDs Prime>
+Token: separator           Lexeme: ,                   
+	<IDsPrime> -> , <IDs>
+Token: identifier          Lexeme: num2                
+	<IDs> -> <identifier> <IDs Prime>
+Token: separator           Lexeme: ,                   
+	<IDsPrime> -> , <IDs>
+Token: identifier          Lexeme: num3                
+	<IDs> -> <identifier> <IDs Prime>
+Token: separator           Lexeme: ;                   
+	<IDs Prime> -> Epsilon
+Token: separator           Lexeme: #                   
+	<Declaration List Prime> -> Epsilon
+	<Statement List> -> <Statement> <Statement List Prime>
+
+Statement syntax error
+Invalid token or keyword or separator
+<identifier>,'if', 'return', 'write', 'read','while' 'keyword' or '{'is expected at the beginning of a statement.
+
+	<Statement List Prime> -> Epsilon
+
+This is not EOF marker.
+Only <Opt Declaration List> and <Statement List> is allowed after #.
+
 

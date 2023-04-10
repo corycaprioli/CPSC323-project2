@@ -7,7 +7,7 @@
 #include <vector>
 
 class Lexer {
-  private:
+  protected:
 
   char input;
 	std::string lexeme_;

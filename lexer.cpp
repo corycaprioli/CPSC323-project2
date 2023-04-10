@@ -112,7 +112,7 @@
   }
   //check if identifier is a keyword
   bool Lexer::is_keyword(std::string id)const {
-    std::vector<std::string> keywords = {"if", "for", "while", "do", "int", "double", "float", "bool", "endif", "endwhile", "put", "else", "return", "true", "false", "std", "cout", "class", "throw", "continue", "break", "endl"};
+    std::vector<std::string> keywords = {"if", "for", "while", "do", "int", "double", "float", "bool", "endif", "endwhile", "put", "else", "return", "true", "false", "std", "cout", "class", "throw", "continue", "break", "endl", "get", "real"};
 
     for(int i = 0; i < keywords.size(); i++) {
       if(keywords[i] == id) {
